@@ -12,15 +12,7 @@ body {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .only_desktop {
-        display: none;
-    }
 
-    .only_mobile {
-        display: block;
-    }
-}
 
 ul {
     list-style-type: none;
@@ -500,3 +492,102 @@ footer .footer_bottom ul li a:hover {
     color: #fff;
 }
 
+   .only_mobile {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    .only_desktop {
+        display: none !important;
+    }
+
+    .only_mobile {
+        display: block;
+    }
+
+    .hero_content{
+        padding: 10px;
+    }
+
+    .accessibility_options {
+        gap: 5px !important;
+    }
+  
+    header>div {
+        padding:  20px 0  !important;
+    }
+
+    .hero_section .hero_content {
+        height:  auto;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header>div {
+        justify-content: center;
+    }
+
+    .hero_section .hero_content h2 {
+        font-size: 1.8em;
+        margin: 10px 25px;
+        text-align: center;
+    }
+
+    .hero_section .hero_content a.cta_button {
+        margin: 5px 25px;
+        font-size: 1.1em;
+        align-self: center;
+    }
+
+    section.news_section>div.news_items, section.infos_a_savoir_section .infos_items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section {
+        box-sizing: border-box !important;
+        width: 100%;
+        padding:  20px;
+    }
+
+    section.news_section>div.news_items article {
+        width: auto;
+        flex: auto;
+        margin-bottom: 20px;
+    }
+
+    section.kesako_metropolis {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.kesako_metropolis img {
+        object-fit: contain;
+        max-width: 100%;
+    }
+    footer {
+        box-sizing: border-box !important;
+    }
+
+    footer .pre_footer, footer .mid_footer, footer .footer_bottom {
+        padding: 20px 10px;
+        box-sizing: border-box !important;
+    }
+    footer .pre_footer .pre_footer_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer_bottom ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section.infos_a_savoir_section>div.infos_items article {
+        width: auto;
+        flex: auto;
+        margin-bottom: 20px;
+    }
+
+
+}
